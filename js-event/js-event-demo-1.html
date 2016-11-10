@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" id="myhtml">
+
 <head>
-	<meta charset="UTF-8">
-	<title>js-event-demo-1</title>
-	<style>
-		#demo{
-			cursor: pointer;
-			background: #ccc;
-			padding: 3px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>js-event-demo-1</title>
+    <style>
+    #demo {
+        cursor: pointer;
+        background: #ccc;
+        padding: 3px;
+    }
+    </style>
 </head>
+
 <body>
-	<div id="demo">click me! and open your console to check the result</div>
-	<p>事件冒泡流最简单的例子</p>
-	<script type="text/javascript">
-		var demo = document.getElementById("demo");
-		demo.onclick = function(){
-			console.log("div click");
-		}
-		document.body.onclick = function(){
-			console.log("body click");
-		}
-		document.getElementById("myhtml").onclick = function(){
-			console.log("html click");
-		}
-		window.onclick = function(){
-			console.log("window click");
-		}
-	</script>
+    <div id="demo">click me! and open your console to check the result</div>
+    <p>事件冒泡流最简单的例子</p>
+    <script type="text/javascript">
+    var demo = document.getElementById("demo");
+    demo.onclick = function() {
+        console.log("div click");
+    }
+    document.body.onclick = function() {
+        console.log("body click");
+    }
+    document.getElementById("myhtml").onclick = function() {
+        console.log("html click");
+    }
+    window.onclick = function() {
+        console.log("window click");
+    }
+    </script>
 </body>
+
 </html>
