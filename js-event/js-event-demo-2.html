@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js event demo 3</title>
+</head>
+
+<body>
+    <p>在使用DOM 0级方法的情况下，事件处理程序会在其所属元素的作用域内运行；</p>
+    <p>在使用attachEvent()方法的情况下，事件处理程序会在全局作用域中运行，因此this等于window</p>
+    <p>本例子旨在测试IE系列的浏览器，请使用IE浏览器</p>
+    <p>在IE11上无反应，不支持“attachEvent”属性或方法</p>
+    <p>在IE8,IE9,IE10下均true，</p>
+    <button id="myBtn">button</button>
+    <script type="text/javascript">
+    if (isIE()) {
+        var btn = document.getElementById("myBtn");
+        btn.attachEvent("onclick", function() {
+            alert(this === window);
+        })
+    } else {
+        alert("请在IE浏览器上进行测试！");
+    }
+
+    function isIE() { //ie?
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    </script>
+</body>
+
+</html>
