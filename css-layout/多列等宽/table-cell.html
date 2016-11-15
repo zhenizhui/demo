@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>多列等宽布局 table table-cell</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    
+    .item {
+        display: table-cell;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .item:hover{
+        background-color: #ccc;
+    }
+    
+    ul {
+        list-style: none;
+        border: 1px solid #ddd;
+    }
+    
+    li + li {
+        border-left: 1px solid #ddd;
+    }
+    </style>
+</head>
+
+<body>
+    <ul class="container">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+</body>
+
+</html>
