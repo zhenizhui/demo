@@ -1,0 +1,41 @@
+/* 
+* @Author: 666
+* @Date:   2016-02-18 10:22:11
+* @Last Modified by:   666
+* @Last Modified time: 2016-02-18 10:58:46
+*/
+
+.layout:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.layout {
+    padding: 0 210px;
+}
+
+.layout_aside_left,
+.layout_main {
+    float: left;
+}
+
+.layout_main {
+    width: 100%;
+    background-color: #A4B347;
+}
+
+.layout_aside {
+    width: 200px;
+}
+
+.layout_aside_left {
+    margin-left: -210px;
+    background-color: #e5e5e5;
+}
+
+.layout_aside_right {
+    margin-right: -210px;
+    float: right;
+    background-color: #e5e5e5;
+}

@@ -1,0 +1,29 @@
+/* 
+* @Author: 666
+* @Date:   2016-02-18 10:05:24
+* @Last Modified by:   666
+* @Last Modified time: 2016-02-18 10:17:42
+*/
+
+.layout:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.layout {
+    padding-right: 210px;
+}
+
+.layout_aside {
+    float: right;
+    margin-right: -210px;
+    background-color: #c8c8c8;
+    width: 200px;
+}
+
+.layout_main {
+	float: left;
+    width: 100%;
+    background-color: #BD8BB8;
+}

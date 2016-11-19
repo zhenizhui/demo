@@ -1,0 +1,39 @@
+/* 
+* @Author: 666
+* @Date:   2016-02-18 10:59:31
+* @Last Modified by:   666
+* @Last Modified time: 2016-02-18 11:07:45
+*/
+
+.layout:after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.layout_aside,.layout_main{
+	float: left;
+}
+
+.layout{
+	padding-left: 420px;
+}
+
+.layout_main{
+	width: 100%;
+	background-color: #4EABA1;
+}
+
+.layout_aside{
+	width: 200px;
+}
+
+.layout_aside_first{
+	margin-left: -420px;
+	background-color: #9CB778;
+}
+
+.layout_aside_second{
+	margin-left: -210px;
+	background-color: #985D97;
+}
