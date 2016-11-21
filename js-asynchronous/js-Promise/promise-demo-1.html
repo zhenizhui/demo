@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ES6 Promise</title>
+</head>
+<body>
+  <p>欢迎，<span id="username"></span></p>
+  <p>今天是<span id="time"></span></p>
+  <script>
+    var dom = document.getElementById("username");
+    var time = document.getElementById("time");
+    /*
+    * RequestData 模拟ajax异步请求数据
+    */
+    function RequestData(){
+      var p = new Promise(function(resolve, reject){
+        var data = {
+          "name": "admin",
+          "age": "22"
+        }
+        setTimeout(function(){
+          console.log("Start RequestData() ...");
+          console.log(data);
+          console.log("End RequestData() ...");
+          resolve(data);
+        }, 2000);
+      });
+      return p;
+    }
+    /*
+    * RenderDom() 接受数据后异步渲染dom结构
+    */
+    function RenderDom(data){
+      var p = new Promise(function(resolve, reject){
+          console.log('Start RenderDom() ...');
+          dom.innerHTML = data.name;
+          console.log('End RenderDom() ...');
+      })
+    }
+
+    RequestData().then(function(data){
+      return data;
+    }).then(function(data){
+      return RenderDom(data);
+    })
+
+    time.innerHTML = new Date();
+
+  </script>
+</body>
+</html>
