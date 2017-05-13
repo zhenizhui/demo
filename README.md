@@ -13,3 +13,5 @@
 + [js中的事件](https://github.com/zhenizhui/demo/tree/master/js-event)
 + [面向对象的js](https://github.com/zhenizhui/demo/tree/master/js-oop)
 + [js中的prototype](https://github.com/zhenizhui/demo/tree/master/js-prototype)
++ [js中的数据结构](https://github.com/zhenizhui/demo/tree/master/js-dataStructure)
+  + [栈](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Stack)

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>divideBy2</title>
+</head>
+<body>
+  <h3>十进制转换成二进制</h3>
+  <input type="text" id="input-number">
+  <p>结果<span class="result"></span></p>
+  <script src="Stack.js"></script>
+  <script>
+    // 栈的实现
+    function Stack() {
+      var items = [];
+      // 添加元素
+      this.push = function (el) {
+        items.push(el);
+      };
+      // 删除元素
+      this.pop = function () {
+        return items.pop();
+      };
+      // 返回栈顶元素
+      this.peek = function () {
+        return items[items.length - 1];
+      };
+      // 判断栈是否为空
+      this.isEmpty = function () {
+        return items.length == 0;
+      };
+      // 返回栈的长度
+      this.size = function () {
+        return items.length;
+      };
+      // 移除栈的所有元素
+      this.clear = function () {
+        items = [];
+      };
+      // 打印栈里面的所有元素
+      this.print = function () {
+        console.log(items.toString());
+      };
+    }
+    // 十进制转换成二进制
+    function divideBy2(decNumber) {
+      var remStack = new Stack();
+      var rem = 0;
+      var binaryString = '';
+
+      while (decNumber > 0) {
+        rem = Math.floor(decNumber % 2);
+        remStack.push(rem);
+        decNumber = Math.floor(decNumber / 2);
+      }
+
+      while (!remStack.isEmpty()) {
+        binaryString += remStack.pop().toString();
+      }
+
+      return binaryString;
+    }
+
+    var numberEl = document.querySelector('#input-number');
+    var resultEl = document.querySelector('.result');
+
+    numberEl.addEventListener('input', function () {
+      var result = divideBy2(numberEl.value);
+      resultEl.innerHTML = result;
+    })
+  </script>
+</body>
+</html>
