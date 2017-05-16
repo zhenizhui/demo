@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedListTestDemo</title>
+</head>
+<body>
+  <script src="linkedList.js"></script>
+  <script>
+    var linkedList = new LinkedList();
+    console.log('空链表: ' + linkedList.print());
+    linkedList.append('a');
+    console.log('添加a: ' + linkedList.print());
+    linkedList.append('b');
+    console.log('添加b: ' + linkedList.print());
+    linkedList.append('c');
+    console.log('添加c: ' + linkedList.print());
+    linkedList.append('d');
+    console.log('添加d: ' + linkedList.print());
+    linkedList.insert(2, 'A');
+    console.log('在2,添加A: ' + linkedList.print());
+    linkedList.remove('A');
+    console.log('移除‘A’: ' + linkedList.print());
+    linkedList.remove('c');
+    console.log('移除‘c’: ' + linkedList.print());
+    console.log('查看d的索引: ' + linkedList.indexOf('d'));
+    console.log('获取head: ' + linkedList.getHead().el);
+    linkedList.removeAt(1);
+    console.log('移除索引1: ' + linkedList.print());
+  </script>
+</body>
+</html>

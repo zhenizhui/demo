@@ -16,3 +16,4 @@
 + [js中的数据结构](https://github.com/zhenizhui/demo/tree/master/js-dataStructure)
   + [栈](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Stack)
   + [队列](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Queue)
+  + [链表](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-LinkedList)
