@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SetTestDemo</title>
+</head>
+<body>
+  <script src="set.js"></script>
+  <script>
+    var A = new Set();
+    A.add(1);
+    console.log('A集合添加1:' + A.values());
+    A.add(2);
+    console.log('A集合添加2:' + A.values());
+    A.add(3);
+    console.log('A集合添加3:' + A.values());
+    A.add(4);
+    console.log('A集合添加4:' + A.values());
+    console.log('A集合里面有没有4:' + A.has(4));
+    A.remove(4);
+    console.log('A集合移除4:' + A.values());
+    console.log('A集合大小:' + A.size());
+
+    var B = new Set();
+    B.add(1);
+    B.add(2);
+    console.log('B集合里面的元素:' + B.values());
+
+    console.log('B是不是A的子集:' + B.subset(A));
+
+    var C = B.union(A);
+    console.log('B和A的并集:' + C.values());
+
+    var D = A.difference(B);
+    console.log('A和B的并集(存在于A但是不存在于B):' + D.values());
+  </script>
+</body>
+</html>
