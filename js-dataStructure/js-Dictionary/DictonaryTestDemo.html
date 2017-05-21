@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DictonaryTestDemo</title>
+</head>
+<body>
+  <script src="dictionary.js"></script>
+  <script>
+    var dictionary = new Dictionary();
+    dictionary.set('Gandalf', 'gandalf@email.com');
+    dictionary.set('John', 'johnsnow@email.com');
+    dictionary.set('Tyrion', 'tyrion@email.com');
+
+    console.log('所有的键名：' + dictionary.keys());
+    console.log('所有的值：' + dictionary.values());
+    console.log('获取键名为Tyrion的值: ' + dictionary.get('Tyrion'));
+    dictionary.remove('Tyrion');
+    console.log('移除了Tyrion, 输出剩下的值');
+    console.log(dictionary.getAll());
+  </script>
+</body>
+</html>

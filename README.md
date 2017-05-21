@@ -18,3 +18,4 @@
   + [队列](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Queue)
   + [链表](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-LinkedList)
   + [集合](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Collection)
+  + [字典](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Dictionary)
