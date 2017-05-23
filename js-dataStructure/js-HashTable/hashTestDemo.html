@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hashTestDemo</title>
+</head>
+<body>
+  <script src="hashTable.js"></script>
+  <script>
+    var hash = new HashTable();
+    hash.put('Gandalf', 'gandalf@email.com');
+    hash.put('John', 'johnsnow@email.com');
+    hash.put('Tyrion', 'tyrion@email.com');
+
+    console.log(hash.get('Gandalf'));
+    console.log(hash.get('Loiane'));
+
+    hash.remove('Gandalf');
+    console.log(hash.get('Gandalf'));
+  </script>
+</body>
+</html>
