@@ -20,3 +20,4 @@
   + [集合](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Collection)
   + [字典](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Dictionary)
   + [散列表](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-HashTable)
+  + [树](https://github.com/zhenizhui/demo/tree/master/js-dataStructure/js-Tree)
